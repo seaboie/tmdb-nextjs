@@ -1,3 +1,4 @@
+import HeaderNav from '@/components/head/HeaderNav'
 import './globals.css'
 
 export const metadata = {
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <HeaderNav />
+        {children}
+      </body>
     </html>
   )
 }
