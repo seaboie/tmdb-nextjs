@@ -1,5 +1,6 @@
 import HeaderNav from '@/components/head/HeaderNav'
 import './globals.css'
+import Providers from './Providers'
 
 export const metadata = {
   title: 'IMBd Web application',
@@ -14,8 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <HeaderNav />
-        {children}
+        <Providers>
+          <HeaderNav />
+          {children}
+        </Providers>
       </body>
     </html>
   )
