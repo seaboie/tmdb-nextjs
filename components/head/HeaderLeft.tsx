@@ -12,11 +12,11 @@ type HeaderLeftProps = {
 export default function HeaderLeft({title, route, icon}: HeaderLeftProps) {
   return (
     <div>
-        <Link href={route} className='mx-4 lg:mx-6 hover:text-amber-600'>
+        <Link href={route} className=' hover:text-amber-600 flex justify-start'>
             <div className='sm:hidden'>
                 {icon}
             </div>
-            <div className='hidden sm:inline-block text-lg'>
+            <div className='hidden sm:inline-block text-lg self-start'>
                 {title}
             </div>
         </Link>
