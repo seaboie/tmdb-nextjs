@@ -8,9 +8,8 @@ import DarkModeSwitch from '../dark/DarkModeSwitch'
 
 export default function HeaderNav() {
   return (
-    <div className='flex justify-between place-items-center sm:max-w-xl md:max-w-6xl
-     px-3 py-4 mx-auto'>
-        <div className='flex gap-4 text-xl'>
+    <div className='flex  justify-around place-items-center py-3'>
+        <div className='flex gap-8 text-xl justify-center'>
             <HeaderLeft title='HOME' route='/' icon={<AiFillHome />} />
             <HeaderLeft title='ABOUT' route='/about' icon={<FcAbout />} />
             <HeaderLeft title='CONTACT' route='/contact' icon={<BsFillInfoCircleFill />} />

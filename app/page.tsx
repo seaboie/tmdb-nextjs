@@ -24,7 +24,7 @@ export default async function Home({searchParams}: { searchParams: SearchParams 
   if (!(await res).ok) return alert("Cannot fetch Data...")
   
   return (
-    <div>
+    <div className='flex-grow '>
       <MovieContent results={results} />
     </div>
   )

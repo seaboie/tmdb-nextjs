@@ -17,10 +17,14 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Providers>
-          <HeaderNav />
-          <Navbar />
+          <div className='min-h-screen flex flex-col'>
+            <HeaderNav />
+            <Navbar />
 
-          {children}
+            <div className='flex-grow'>
+              {children}
+            </div>
+          </div>
         </Providers>
       </body>
     </html>

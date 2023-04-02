@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='max-w-6xl mx-auto px-3'>
+    <div className='max-w-6xl mx-auto px-3 my-24'>
       <div className='text-4xl font-bold text-amber-600 mt-10'>About</div>
       <div className='flex flex-col gap-5 mt-5'>
         <div>
@@ -30,6 +30,7 @@ export default function About() {
 
           Please credit and share this article with others using this link:https://www.bangkokpost.com/thailand/general/2338847/ko-phangan-upbeat-after-being-ranked-no-1-destination-for-workation. View our policies at http://goo.gl/9HgTd and http://goo.gl/ou6Ip. © Bangkok Post PCL. All rights reserved.
         </div>
+        
       </div>
     </div>
   )
