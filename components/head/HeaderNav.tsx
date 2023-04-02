@@ -2,15 +2,17 @@ import React from 'react'
 import HeaderLeft from './HeaderLeft'
 import { AiFillHome } from 'react-icons/ai'
 import { BsFillInfoCircleFill } from 'react-icons/bs'
+import { FcAbout } from 'react-icons/fc'
 import Link from 'next/link'
 import DarkModeSwitch from '../dark/DarkModeSwitch'
 
 export default function HeaderNav() {
   return (
     <div className='flex justify-between place-items-center sm:max-w-xl  md:max-w-3xl lg:max-w-4xl  xl:max-w-6xl
-    2xl:max-w-7xl px-3 py-2 mx-auto'>
+    2xl:max-w-7xl px-3 py-4 mx-auto'>
         <div className='flex gap-4 text-xl'>
             <HeaderLeft title='HOME' route='/' icon={<AiFillHome />} />
+            <HeaderLeft title='ABOUT' route='/about' icon={<FcAbout />} />
             <HeaderLeft title='CONTACT' route='/contact' icon={<BsFillInfoCircleFill />} />
         </div>
         <div className='text-2xl flex items-center space-x-5'>
