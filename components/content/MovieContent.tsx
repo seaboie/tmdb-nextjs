@@ -1,4 +1,7 @@
 import React from 'react'
+import CardResult from '../card/CardResult'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export type Movie = {
     id: string,
@@ -7,7 +10,11 @@ export type Movie = {
     original_title: string,
     overview: string,
     poster_path: string,
-    vote_average: string
+    vote_average: string,
+    backdrop_path: string,
+    name: string,
+    first_air_date: string,
+    vote_count: string
 }
 
 export type MovieContentProps = {
@@ -16,10 +23,10 @@ export type MovieContentProps = {
 
 export default function MovieContent({results}: MovieContentProps) {
   return (
-    <div>
+    <div className='sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5  max-w-6xl py-5 px-5 mx-auto'>
         {
             results.map((result) => (
-                <div key={result.id}>{result.original_title}</div>
+                <CardResult key={result.id} result={result} />
             ))
         }
     </div>
