@@ -1,7 +1,5 @@
 import React from 'react'
 import CardResult from '../card/CardResult'
-import Link from 'next/link'
-import Image from 'next/image'
 
 export type Movie = {
     id: string,

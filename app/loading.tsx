@@ -8,8 +8,8 @@ export default function loading() {
             <Image
                 src={'spinner.svg'}
                 alt='Loading...'
-                width={150}
-                height={150}
+                width={100}
+                height={100}
                 className=''
             />
         </div>

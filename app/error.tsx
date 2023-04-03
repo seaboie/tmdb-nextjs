@@ -1,16 +1,14 @@
 "use client"
 import React, { useEffect } from 'react'
 
-interface ErrorProps {
-    error: string,
-    reset(): void
-}
+// interface ErrorProps {
+//     error: string,
+//     reset(): void
+// }
 
-export default function error({ error, reset }: ErrorProps) {
+export default function Error({ error }: { error: string }, reset = () => {}) {
 
     useEffect(() => {
-
-        console.log(error);
 
         return () => { }
     }, [error])
