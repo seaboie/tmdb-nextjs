@@ -2,6 +2,7 @@ import HeaderNav from '@/components/head/HeaderNav'
 import './globals.css'
 import Providers from './Providers'
 import Navbar from '@/components/nav/Navbar'
+import SearchBox from '@/components/search/SearchBox'
 
 export const metadata = {
   title: 'IMBd Web application',
@@ -20,6 +21,7 @@ export default function RootLayout({
           <div className='min-h-screen flex flex-col'>
             <HeaderNav />
             <Navbar />
+            <SearchBox />
 
             <div className='flex-grow'>
               {children}

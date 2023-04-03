@@ -17,7 +17,7 @@ export default async function MoviePage({params}: MoviePageProps) {
     const movie = await getMovie(params.id) as Movie;
 
     return (
-        <div className='w-full'>
+        <div className='w-full py-40'>
 
             <div className='p-4 md:pt-8 flex flex-col md:flex-row place-items-center max-w-6xl mx-auto md:space-x-6'>
                 <Image 
